@@ -21,14 +21,6 @@ const fetchCat = async (text) => {
 	return `${OPEN_API_DOMAIN}/${responseJson.url}`;
 };
 
-function CatItem(props) {
-	return (
-		<li>
-			<img src={props.img} style={{ width: "150px" }} />
-		</li>
-	);
-}
-
 const App = () => {
 	const CAT1 = "https://cataas.com/cat/HSENVDU4ZMqy7KQ0/says/react";
 	const CAT2 = "https://cataas.com/cat/BxqL2EjFmtxDkAm2/says/inflearn";
